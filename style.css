@@ -399,3 +399,30 @@ section{
     }
 
 }
+@media(max-width:900px){
+  nav{
+    display:none !important;
+    position:absolute !important;
+    top:80px !important;
+    right:15px !important;
+    width:260px !important;
+    background:#081522 !important;
+    border:1px solid #00e5ff !important;
+    border-radius:20px !important;
+    padding:25px 20px !important;
+    z-index:99999 !important;
+    box-shadow:0 0 25px rgba(0,229,255,0.4) !important;
+  }
+
+  nav.active{
+    display:flex !important;
+    flex-direction:column !important;
+  }
+
+  nav a{
+    display:block !important;
+    margin:12px 0 !important;
+    font-size:20px !important;
+    text-align:center !important;
+  }
+}
