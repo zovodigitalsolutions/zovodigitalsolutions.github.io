@@ -1,0 +1,366 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:linear-gradient(to bottom,#03111f,#071d33);color:white}
+
+.header{height:80px;padding:0 8%;background:rgba(3,17,31,.95);display:flex;align-items:center;justify-content:space-between;position:relative;top:0;z-index:1000;border-bottom:1px solid rgba(0,229,255,.15)}
+.logo{display:flex;align-items:center;gap:12px}
+.logo img{width:45px}
+.logo span{font-size:22px;font-weight:700;white-space:nowrap}
+nav a{color:white;text-decoration:none;margin-left:15px;padding:10px 12px;border-radius:8px}
+nav a:hover{color:#00e5ff;background:rgba(0,229,255,.12)}
+
+section{padding:65px 8%}
+.section-heading{text-align:center;margin-bottom:35px}
+.section-heading h2{color:#00e5ff;font-size:42px;text-shadow:0 0 18px rgba(0,229,255,.5)}
+
+.hero{text-align:center;padding:45px 8% 55px;position:relative;overflow:hidden}
+.hero-main-logo{width:170px;margin-bottom:18px;filter:drop-shadow(0 0 20px #00e5ff)}
+.agency-line{font-size:21px;color:#d8d8d8;margin-bottom:16px}
+.hero h1{color:#00e5ff;font-size:58px;margin-bottom:18px;text-shadow:0 0 25px #00e5ff}
+.typing-text{font-size:30px;color:white;height:40px;text-shadow:0 0 10px #00e5ff}
+.hero p{max-width:800px;margin:15px auto 0;color:#cfd9e6;font-size:21px;line-height:1.7}
+.hero-buttons{margin-top:30px}
+.btn,.price-btn,.contact button{background:#00e5ff;color:black;padding:15px 32px;border-radius:10px;text-decoration:none;font-weight:bold;display:inline-block;transition:.3s;border:none;cursor:pointer}
+.btn.outline{background:transparent;color:#00e5ff;border:2px solid #00e5ff;margin-left:12px}
+.btn:hover,.price-btn:hover,.contact button:hover{background:white;color:black;box-shadow:0 0 22px #00e5ff;transform:translateY(-5px)}
+
+.about-container{display:flex;gap:45px;align-items:center;flex-wrap:wrap}
+.about-left,.about-right{flex:1;min-width:300px}
+.about-left h3{font-size:38px;color:#00e5ff;margin-bottom:20px}
+.about-left p{font-size:18px;line-height:1.8;color:#d7d7d7}
+.about-points{margin-top:25px;display:grid;gap:14px}
+.point{padding:14px 20px;border:1px solid #00e5ff;border-radius:14px;background:rgba(0,229,255,.05)}
+.about-right{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.about-card,.card,.price-card,.testimonial-card,.why-card{background:#081522;border:1px solid #00e5ff;border-radius:20px;transition:.35s;box-shadow:0 0 12px rgba(0,229,255,.12)}
+.about-card{padding:32px 18px;text-align:center}
+.about-card h3{font-size:36px;color:#00e5ff}
+
+.grid,.pricing-grid,.testimonial-grid,.why-grid{display:grid;gap:24px}
+.service-grid{grid-template-columns:repeat(3,1fr)}
+.card{padding:32px 22px;text-align:center;font-weight:bold}
+.card i,.why-card i{font-size:40px;color:#00e5ff;margin-bottom:16px;display:block}
+.card h3{font-size:21px}
+
+.pricing-grid{grid-template-columns:repeat(3,1fr)}
+.price-card{padding:60px 30px 35px;position:relative;border:2px solid #00e5ff}
+.price-card span{position:absolute;top:16px;left:50%;transform:translateX(-50%);background:orange;color:white;padding:8px 16px;border-radius:30px;font-weight:bold}
+.price-card h3{color:#00e5ff;font-size:34px;text-align:center;margin-bottom:12px}
+.price-card h4{font-size:34px;text-align:center;margin-bottom:18px}
+.price-card p{color:#cfd9e6;text-align:center;line-height:1.6;margin-bottom:22px}
+.price-card ul{list-style:none;margin-bottom:26px}
+.price-card li{color:#d7e3f4;margin-bottom:12px;line-height:1.5}
+.price-card li::before{content:"✓ ";color:#00e5ff;font-weight:bold}
+.price-btn{display:block;text-align:center}
+
+.testimonials{text-align:center}
+.testimonial-heading{margin-bottom:35px}
+.testimonial-heading h2{color:#00e5ff;font-size:22px;text-transform:uppercase;letter-spacing:3px;margin-bottom:8px}
+.testimonial-heading h1{font-size:46px}
+.testimonial-grid{grid-template-columns:repeat(3,1fr)}
+.testimonial-card{padding:32px;text-align:left}
+.stars{color:orange;font-size:25px;margin-bottom:16px}
+.testimonial-card p{color:#d7e3f4;font-size:17px;line-height:1.7;margin-bottom:22px;font-style:italic}
+.testimonial-card h3{color:#00e5ff;font-size:23px;margin-bottom:5px}
+
+.why-grid{grid-template-columns:repeat(4,1fr)}
+.why-card{padding:32px 22px;text-align:center}
+.why-card h3{color:#00e5ff;font-size:22px;margin-bottom:12px}
+.why-card p{color:#cfd9e6;line-height:1.6}
+
+.card:hover,.price-card:hover,.testimonial-card:hover,.why-card:hover,.about-card:hover{transform:translateY(-10px) scale(1.02);box-shadow:0 0 25px rgba(0,229,255,.5)}
+
+.contact form{max-width:700px;margin:auto;display:grid;gap:18px}
+.contact input,.contact textarea{width:100%;padding:16px;border:1px solid #00e5ff;background:#081522;color:white;border-radius:12px;font-size:16px}
+.contact textarea{height:140px;resize:none}
+
+.footer{background:#081522;padding:45px 8%;text-align:center}
+.footer h3{color:#00e5ff;font-size:28px;margin-bottom:15px}
+.footer p{color:#cfd9e6;margin-bottom:14px}
+.footer-links{margin:22px 0}
+.footer-links a{color:#00e5ff;margin:0 12px;text-decoration:none}
+.whatsapp-float{position:fixed;right:22px;bottom:22px;background:#00e5ff;color:black;padding:14px 20px;border-radius:40px;text-decoration:none;font-weight:bold;z-index:999;box-shadow:0 0 18px #00e5ff}
+
+.hidden{opacity:0;transform:translateY(40px);transition:all 1s ease}
+.show{opacity:1;transform:translateY(0)}
+.scroll-bar{position:fixed;top:0;left:0;width:0%;height:4px;background:#00e5ff;z-index:99999;box-shadow:0 0 15px #00e5ff}
+.cursor-glow{position:fixed;width:220px;height:220px;background:rgba(0,229,255,.12);border-radius:50%;pointer-events:none;filter:blur(70px);transform:translate(-50%,-50%);z-index:-1}
+.menu-icon{display:none;color:#00e5ff;font-size:34px;cursor:pointer}
+
+@media(max-width:900px){
+  .header{height:80px;padding:0 20px}
+  .logo img{width:38px}
+  .logo span{font-size:18px}
+  .menu-icon{display:flex}
+  nav{display:none;position:absolute;top:80px;right:20px;background:#081522;padding:18px;border:1px solid #00e5ff;border-radius:14px;flex-direction:column}
+  nav.active{display:flex}
+  nav a{margin:8px 0}
+
+  section{padding:42px 20px}
+  .hero{padding:35px 20px 45px}
+  .hero-main-logo{width:130px;margin-bottom:14px}
+  .agency-line{font-size:15px;line-height:1.5;margin-bottom:14px}
+  .hero h1{font-size:36px}
+  .typing-text{font-size:23px;height:34px}
+  .hero p{font-size:17px}
+  .btn.outline{margin-left:0;margin-top:12px}
+  .hero-buttons{display:flex;flex-direction:column;align-items:center;gap:12px}
+
+  .section-heading{margin-bottom:24px}
+  .section-heading h2{font-size:34px}
+  .testimonial-heading h1{font-size:34px}
+
+  .service-grid,.pricing-grid,.testimonial-grid,.why-grid{grid-template-columns:1fr;gap:20px}
+  .about-container{gap:25px}
+  .about-left h3{font-size:30px}
+  .about-right{grid-template-columns:1fr}
+}
+/* FINAL GLOBAL COMPACT SPACING */
+
+section{
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+}
+
+.hero{
+    padding-top: 30px !important;
+    padding-bottom: 25px !important;
+}
+
+.section-heading{
+    margin-bottom: 18px !important;
+}
+
+.hero-buttons{
+    margin-top: 20px !important;
+}
+
+.about-container,
+.service-grid,
+.pricing-grid,
+.testimonial-grid,
+.why-grid{
+    gap: 18px !important;
+}
+
+.about-left h3,
+.section-heading h2,
+.testimonial-heading h1{
+    margin-bottom: 15px !important;
+}
+
+.price-card,
+.card,
+.testimonial-card,
+.why-card,
+.about-card{
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+}
+
+@media(max-width:900px){
+    section{
+        padding-top: 28px !important;
+        padding-bottom: 28px !important;
+    }
+
+    .hero{
+        padding-top: 25px !important;
+        padding-bottom: 20px !important;
+    }
+}/* MOBILE PRICE CARD FIX */
+
+@media(max-width:900px){
+
+    .price-card{
+        padding: 60px 28px 35px !important;
+        min-height: auto !important;
+        overflow: visible !important;
+    }
+
+    .price-card h3{
+        margin-top: 10px !important;
+    }
+
+    .price-card ul{
+        margin-bottom: 25px !important;
+    }
+
+    .price-card li{
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        margin-bottom: 10px !important;
+    }
+
+}
+/* STRONG POP ANIMATION */
+
+.card,
+.price-card,
+.testimonial-card,
+.why-card,
+.about-card,
+.btn,
+.price-btn{
+    transition: all 0.35s ease !important;
+}
+
+.card:hover,
+.price-card:hover,
+.testimonial-card:hover,
+.why-card:hover,
+.about-card:hover,
+.btn:hover,
+.price-btn:hover{
+    transform: translateY(-12px) scale(1.05) !important;
+    box-shadow: 0 0 35px rgba(0, 229, 255, 0.75) !important;
+}
+/* MOBILE AUTO POP ANIMATION */
+
+@media(max-width:900px){
+
+    .card,
+    .price-card,
+    .testimonial-card,
+    .why-card,
+    .about-card{
+        animation: mobilePop 2.5s infinite ease-in-out;
+    }
+
+    @keyframes mobilePop{
+        0%, 100%{
+            transform: translateY(0) scale(1);
+            box-shadow: 0 0 12px rgba(0,229,255,0.25);
+        }
+
+        50%{
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 0 25px rgba(0,229,255,0.55);
+        }
+    }
+
+
+}
+/* ANCHOR SCROLL OFFSET FIX */
+
+html{
+    scroll-padding-top: 120px;
+}
+
+section{
+    scroll-margin-top: 120px;
+}
+/* CLEAN DESKTOP NAVBAR */
+
+.header{
+    position: relative !important;
+    height: 80px !important;
+}
+
+.hero{
+    padding-top: 35px !important;
+}
+
+.pricing{
+    padding-top: 35px !important;
+}
+/* FINAL FIX - NO NAVBAR OVERLAP */
+
+.header{
+    position: static !important;
+    top: auto !important;
+    z-index: auto !important;
+}
+
+body{
+    padding-top: 0 !important;
+}
+
+html{
+    scroll-padding-top: 0 !important;
+}
+
+section{
+    scroll-margin-top: 0 !important;
+}
+
+.pricing,
+.hero,
+.about,
+.services,
+.testimonials,
+.why,
+.contact{
+    padding-top: 45px !important;
+}
+/* MOST POPULAR LABEL FIX */
+
+.price-card.popular{
+    padding-top: 85px !important;
+}
+
+.price-card.popular span{
+    top: 22px !important;
+}
+
+.price-card.popular h3{
+    margin-top: 10px !important;
+}
+/* FINAL PREMIUM EFFECTS */
+
+body{
+    background:
+    radial-gradient(circle at top left, rgba(0,229,255,0.12), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(0,229,255,0.10), transparent 30%),
+    linear-gradient(to bottom, #03111f, #071d33);
+}
+
+.header{
+    box-shadow: 0 0 25px rgba(0,229,255,0.18);
+}
+
+section{
+    position: relative;
+}
+
+.section-heading h2,
+.hero h1,
+.testimonial-heading h1{
+    text-shadow: 0 0 22px rgba(0,229,255,0.7);
+}
+
+.card,
+.price-card,
+.testimonial-card,
+.why-card,
+.about-card,
+.about-left,
+.point{
+    backdrop-filter: blur(10px);
+}
+
+.card:hover,
+.price-card:hover,
+.testimonial-card:hover,
+.why-card:hover,
+.about-card:hover,
+.point:hover{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 35px rgba(0,229,255,0.65);
+}
+
+.btn,
+.price-btn,
+.contact button,
+.whatsapp-float{
+    box-shadow: 0 0 18px rgba(0,229,255,0.55);
+}
+
+.whatsapp-float{
+    animation: whatsappPulse 2s infinite;
+}
+
+@keyframes whatsappPulse{
+    0%{ box-shadow: 0 0 0 0 rgba(0,229,255,0.7); }
+    70%{ box-shadow: 0 0 0 18px rgba(0,229,255,0); }
+    100%{ box-shadow: 0 0 0 0 rgba(0,229,255,0); }
+}
